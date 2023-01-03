@@ -6,9 +6,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "moment": "^2.29.4",
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "weather-icons-react": "^1.2.0"
   },
   "devDependencies": {
     "@types/node": "18.11.3",
