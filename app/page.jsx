@@ -7,7 +7,7 @@ import SearchBox from "./components/SearchBox"
 
 // https://api.open-meteo.com/v1/forecast?latitude=51.51&longitude=-0.13&hourly=temperature_2m,rain,showers,snowfall,weathercode,windspeed_10m&daily=weathercode,temperature_2m_max,temperature_2m_min,sunrise,sunset&timezone=Europe%2FLondon
 export default function Home() {
-  const [data, setData] = useState({})
+  // const [data, setData] = useState({})
   const [dailyData, setDailyData] = useState([])
   const [hourlyData, setHourlyData] = useState([])
 
@@ -18,8 +18,8 @@ export default function Home() {
     )
       .then((res) => res.json())
       .then((data) => {
-        setData(data)
-        console.log(data)
+        // setData(data)
+        // console.log(data)
         const { hourly, daily } = data
         let hourlyDataSet = []
         for(let i=0; i<hourly?.time.length; i++)
